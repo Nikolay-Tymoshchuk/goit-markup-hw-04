@@ -1,11 +1,14 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --primary-icon-color: #afb1b8;
   --accent-color: #2196f3;
   --primary-bgcolor: #ffffff;
+  --middle-bgkolor: #f5f4fa;
   --secondary-bgcolor: #2f303a;
 
   --item-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --color-gradient: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -43,13 +46,18 @@ img {
 }
 
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   color: var(--title-text-color);
+  text-align: center;
+  margin: 0 auto 50px;
 }
 
-.wrap {
+/* .wrap {
   width: 1600px;
   margin: 0px auto;
-}
+} */
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -99,8 +107,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav > .list-item:not(:first-child),
-.auth-nav > .list-item:not(:first-child) {
+.site-nav > .list-item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -115,10 +122,26 @@ img {
 }
 
 .auth-nav .link {
+  display: inline-flex;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
+}
+
+.auth-nav .icon-top {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/* .auth-nav .icon-top:hover,
+.auth-nav .icon-top:focus {
+  fill: var(--accent-color);
+} */
+
+.auth-nav > .list-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .auth-nav .link:hover,
@@ -133,8 +156,13 @@ img {
 /* Hero title*/
 
 .hero {
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)),
+    url('../images/main-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
   padding: 200px 0;
-  background-color: var(--secondary-bgcolor); /* temporarily add-ons for visualization */
   text-align: center;
 }
 
@@ -170,6 +198,17 @@ img {
 
 /* Features section */
 
+.features .thumb {
+  padding: 25px 100px;
+  background-color: var(--middle-bgkolor);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features .icon-features {
+  display: block;
+}
+
 .features .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -204,14 +243,6 @@ img {
   text-align: center;
 }
 
-.occupation .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-
-  margin: 0px auto 50px;
-}
-
 .occupation .occupation-list {
   display: flex;
 }
@@ -223,18 +254,10 @@ img {
 /* Our tem section */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--middle-bgkolor);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.team .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-
-  margin-bottom: 50px;
 }
 
 .team .team-list {
@@ -250,16 +273,68 @@ img {
   margin-left: 30px;
 }
 
-.team-unit {
+.team-list .team-unit {
   color: var(--title-text-color);
   font-weight: 500;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.unit-position {
+.team-list .unit-position {
   margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.team-list .links-list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 32px;
   margin-bottom: 30px;
+  margin-left: 32px;
+}
+
+.team-list .sublist-shell {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: inherit;
+  justify-content: center;
+  align-items: center;
+  fill: var(--primary-icon-color);
+}
+
+.team-list .sublist-shell:hover,
+.team-list .sublist-shell:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-bgcolor);
+}
+/* ======================REGULAR CUSTOMERS STARTS HERE============================================== */
+
+.customers .customers-list {
+  display: flex;
+}
+
+.customers-list > .list-item:not(:nth-child(1)) {
+  margin-left: 30px;
+}
+
+.customers-list .icon-customers {
+  display: block;
+}
+
+.customers-list .customers-shell {
+  max-width: 170px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  fill: var(--primary-icon-color);
+  border: 1px solid var(--primary-icon-color);
+}
+
+.customers-list .customers-shell:hover,
+.customers-list .customers-shell:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Footer */
