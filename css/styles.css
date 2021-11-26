@@ -64,7 +64,12 @@ img {
   margin: 0 auto;
 }
 
-/* Header */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*========================================Header start here==========================================*/
 
 .header-border {
   border-bottom: 1px solid #ececec;
@@ -77,7 +82,7 @@ img {
   align-items: center;
 }
 
-/* Logo */
+/* =======================Logo============================ */
 
 .logo {
   text-decoration: unset;
@@ -92,7 +97,7 @@ img {
   color: var(--accent-color);
 }
 
-/* Main navigation */
+/* ==================Main navigation====================== */
 
 .site-nav {
   display: flex;
@@ -149,11 +154,9 @@ img {
   color: var(--accent-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-/* Hero title*/
+/*========================================Header end here==========================================*/
+
+/*========================================Hero start here=========================================*/
 
 .hero {
   background-color: #c4c4c4;
@@ -177,7 +180,7 @@ img {
   margin: 0 0 30px;
 }
 
-/* Hero button */
+/* ========================Hero button=======================*/
 
 .hero > .hero-button {
   color: #ffffff;
@@ -196,7 +199,9 @@ img {
   border-radius: 4px;
 }
 
-/* Features section */
+/*========================================Hero end here=========================================*/
+
+/*=================================Features section start here================================== */
 
 .features .thumb {
   padding: 25px 100px;
@@ -233,7 +238,9 @@ img {
   margin-left: 30px;
 }
 
-/* Occupation section */
+/*=================================Features section end here================================== */
+
+/* ===============================Occupation section start here=================================*/
 
 .section.occupation {
   padding-top: 0px;
@@ -251,7 +258,9 @@ img {
   margin-left: 30px;
 }
 
-/* Our tem section */
+/* ===============================Occupation section end here=================================*/
+
+/* =================================Our tem section start here================================= */
 
 .team {
   background-color: var(--middle-bgkolor);
@@ -310,7 +319,10 @@ img {
   background-color: var(--accent-color);
   fill: var(--primary-bgcolor);
 }
-/* ======================REGULAR CUSTOMERS STARTS HERE============================================== */
+
+/* ====================================Our tem section end here===================================== */
+
+/* ===============================REGULAR CUSTOMERS START HERE============================================== */
 
 .customers .customers-list {
   display: flex;
@@ -338,7 +350,9 @@ img {
   fill: var(--accent-color);
 }
 
-/* Footer */
+/* ===============================REGULAR CUSTOMERS END HERE============================================== */
+
+/* ======================================Footer start here==================================================*/
 
 .bottom {
   padding-top: 60px;
@@ -418,9 +432,11 @@ img {
   margin-bottom: 20px;
 }
 
-/* PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE */
+/* ============================================Footer end here=====================================================*/
 
-/* Works filter */ /* Works filter */ /* Works filter */ /* Works filter */ /* Works filter */
+/* ========================================PORTFOLIO PAGE START HERE ================================================*/
+
+/* ======================================Works filter start here============================================= */
 
 .filter-list {
   display: flex;
@@ -454,7 +470,9 @@ img {
   box-shadow: var(--item-shadow);
 }
 
-/* Works examples */ /* Works examples */ /* Works examples */ /* Works examples */
+/* ======================================Works filter end here============================================= */
+
+/* =====================================Works examples start here============================================*/
 
 .filter-items {
   display: flex;
@@ -507,3 +525,5 @@ img {
 
   margin: 4px 0 0;
 }
+
+/* =====================================Works examples end here============================================*/
